@@ -1,0 +1,73 @@
+name: Weebly FinOps
+description: >-
+  Financial operations considerations for Weebly API and platform usage.
+  Weebly pricing centers on website/ecommerce subscription tiers rather than
+  per-API-call billing. Key cost drivers include plan tier, transaction fees
+  on sales, and domain registration. Developer access to the Platform API was
+  granted as part of the developer program (paused for new accounts since
+  February 2020 following Square acquisition).
+url: https://www.weebly.com/pricing
+created: "2026-06-13"
+modified: "2026-06-13"
+costModel:
+  type: subscription
+  description: >-
+    Weebly charges flat monthly or annual subscription fees for website/store
+    hosting. There are no per-API-call charges. Additional costs arise from
+    e-commerce transaction fees (waived on Performance plan), domain
+    registration, and any third-party app fees from the Weebly App Center.
+costDrivers:
+  - name: Subscription Plan
+    description: >-
+      Monthly or annual plan fee for website hosting and eCommerce features.
+      Ranges from $0 (Free) to $36/month (Performance, billed monthly) or
+      $32/month (Performance, billed annually).
+    type: fixed
+    billing: monthly or annually
+
+  - name: Transaction Fees
+    description: >-
+      A 3% platform transaction fee applies to all e-commerce sales on Free,
+      Personal, and Professional plans. The Performance plan eliminates this
+      fee entirely, making it cost-effective for stores generating more than
+      approximately $1,040/month in sales.
+    type: variable
+    rate: "3% of gross sales (Free, Personal, Professional plans)"
+    notes: Waived on Performance plan
+
+  - name: Domain Registration
+    description: >-
+      Custom domain registration is available as an add-on. Professional and
+      Performance plans include a free domain for the first year.
+    type: variable
+    notes: Free for first year on Professional and Performance plans
+
+  - name: Third-Party App Fees
+    description: >-
+      Apps in the Weebly App Center may carry one-time or recurring subscription
+      fees set by individual developers. Costs vary widely by app.
+    type: variable
+
+optimization:
+  - tip: Choose Performance plan for high-volume stores
+    detail: >-
+      At roughly $1,040/month in sales, the 3% fee savings on the Performance
+      plan offset its higher monthly cost compared to Professional.
+
+  - tip: Bill annually to reduce per-month costs
+    detail: >-
+      Annual billing reduces the effective monthly rate: Personal drops from
+      $13 to $10/month, Professional from $20 to $15/month, Performance from
+      $36 to $32/month.
+
+  - tip: Use webhooks to minimize API polling
+    detail: >-
+      Weebly supports webhooks for real-time event notifications, reducing
+      the need for polling API endpoints and keeping integrations within the
+      5,000 requests/hour rate limit at no extra cost.
+
+  - tip: Cache API responses
+    detail: >-
+      Cache product catalogs, site configurations, and other infrequently
+      changing data locally to reduce API call volume and avoid hitting rate
+      limits during traffic spikes.

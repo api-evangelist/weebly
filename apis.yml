@@ -1,0 +1,79 @@
+aid: weebly
+name: Weebly
+description: >-
+  Weebly (a Square company) is a website and e-commerce builder providing REST
+  APIs for managing sites, pages, products, orders, customers, blog posts, and
+  custom form submissions. The platform serves over 50 million websites and
+  offers OAuth 2.0-authenticated REST endpoints for building apps and
+  integrations on top of Weebly-powered storefronts and sites.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/weebly/refs/heads/main/apis.yml
+created: "2026-06-13"
+modified: "2026-06-13"
+specificationVersion: "0.19"
+type: Index
+tags:
+  - Website Builder
+  - E-Commerce
+  - Blogging
+  - Sites
+  - Pages
+  - Products
+  - Orders
+  - Customers
+  - Square
+apis:
+  - aid: weebly:weebly-api
+    name: Weebly REST API
+    description: >-
+      RESTful API for managing Weebly sites, pages, blog posts, e-commerce
+      products, orders, customers, coupons, categories, and form submissions.
+      Supports OAuth 2.0 authentication and JSON data exchange. Rate limit is
+      5,000 calls per hour.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://dev.weebly.com/
+    baseURL: https://api.weeblycloud.com
+    tags:
+      - Sites
+      - Pages
+      - Blog
+      - E-Commerce
+      - Orders
+      - Products
+      - Customers
+    properties:
+      - type: Documentation
+        url: https://dev.weebly.com/
+      - type: OpenAPI
+        url: https://dev.weebly.com/
+    contact:
+      - FN: Weebly Developer Support
+        url: https://www.weebly.com/developer/
+        email: ""
+common:
+  - type: Website
+    url: https://www.weebly.com
+  - type: Documentation
+    url: https://dev.weebly.com/
+  - type: GitHubOrg
+    url: https://github.com/weebly
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/weebly
+  - type: Blog
+    url: https://www.weebly.com/blog
+  - type: Pricing
+    url: https://www.weebly.com/pricing
+  - type: StatusPage
+    url: https://weebly.statuspage.io
+  - type: X
+    url: https://x.com/weebly
+  - type: Plans
+    url: plans/weebly-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/weebly-rate-limits.yml
+  - type: FinOps
+    url: finops/weebly-finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

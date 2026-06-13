@@ -1,0 +1,45 @@
+name: Weebly API Rate Limits
+description: >-
+  Weebly REST API enforces rate limits to ensure fair usage and platform
+  stability. All authenticated API requests are subject to a per-hour call
+  limit. Developers should implement caching and batch operations to stay
+  within limits. The API uses OAuth 2.0 access tokens for authentication.
+url: https://dev.weebly.com/
+created: "2026-06-13"
+modified: "2026-06-13"
+rateLimits:
+  - name: Standard API Rate Limit
+    description: >-
+      The Weebly Platform API limits all authenticated REST API calls to 5,000
+      requests per hour per access token. This applies across all endpoints
+      including Sites, Pages, Blog, Products, Orders, Customers, Coupons,
+      Categories, and Form Submissions.
+    limit: 5000
+    period: hour
+    scope: per access token
+    endpoints:
+      - /user
+      - /user/sites
+      - /user/sites/{site_id}
+      - /user/sites/{site_id}/page
+      - /user/sites/{site_id}/blog
+      - /user/sites/{site_id}/store/product
+      - /user/sites/{site_id}/store/order
+      - /user/sites/{site_id}/store/customer
+      - /user/sites/{site_id}/store/coupon
+      - /user/sites/{site_id}/store/category
+      - /user/sites/{site_id}/form
+      - /user/sites/{site_id}/form/{form_id}/entry
+    headers:
+      - name: X-RateLimit-Limit
+        description: Maximum number of requests allowed per hour
+      - name: X-RateLimit-Remaining
+        description: Number of requests remaining in the current window
+      - name: X-RateLimit-Reset
+        description: Unix timestamp when the rate limit window resets
+    bestPractices:
+      - Cache API responses locally to reduce redundant calls
+      - Use webhooks to receive real-time updates instead of polling
+      - Batch multiple operations where the API supports it
+      - Monitor rate limit headers in each response
+      - Implement exponential backoff on 429 Too Many Requests responses

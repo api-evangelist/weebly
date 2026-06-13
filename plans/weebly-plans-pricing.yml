@@ -1,0 +1,108 @@
+name: Weebly Plans and Pricing
+description: >-
+  Weebly offers four main plans ranging from a free tier to a Performance plan
+  optimized for e-commerce. All paid plans include SSL security, custom domain
+  support, and eCommerce capabilities. Plans are available monthly or annually,
+  with annual billing providing significant savings.
+url: https://www.weebly.com/pricing
+created: "2026-06-13"
+modified: "2026-06-13"
+plans:
+  - name: Free
+    description: >-
+      Basic website building with Weebly branding. Suitable for personal
+      projects and experimentation. Includes SSL, shopping cart with unlimited
+      items, and community forum support.
+    price: 0
+    currency: USD
+    billing: monthly
+    features:
+      - Free SSL security
+      - Weebly subdomain
+      - Shopping cart (unlimited items)
+      - Third-party embeds
+      - SEO tools
+      - Lead capture forms
+      - Instagram feed integration
+      - Community forum support
+    limits:
+      storage: Limited (500MB)
+      transactionFee: "3%"
+      ecommerce: true
+      customDomain: false
+
+  - name: Personal
+    description: >-
+      Connect a custom domain and unlock expanded eCommerce features including
+      digital product sales and shipping calculators. Removes Weebly ads from
+      your site.
+    price: 13
+    currency: USD
+    billing: monthly
+    annualPrice: 10
+    features:
+      - Everything in Free
+      - Custom domain connection
+      - Free SSL security
+      - Remove Weebly ads
+      - Digital product sales
+      - Shipping calculator
+      - Item options
+      - Item badges
+    limits:
+      storage: Unlimited
+      transactionFee: "3%"
+      ecommerce: true
+      customDomain: true
+
+  - name: Professional
+    description: >-
+      Full professional website with unlimited storage, advanced analytics,
+      phone support, and enhanced eCommerce tools including inventory
+      management, tax calculation, coupons, and gift cards.
+    price: 20
+    currency: USD
+    billing: monthly
+    annualPrice: 15
+    features:
+      - Everything in Personal
+      - Unlimited storage
+      - Advanced site statistics
+      - Free domain for first year
+      - Phone support
+      - Inventory management
+      - In-store pickup
+      - Tax calculation
+      - Coupon codes
+      - Gift cards
+      - Item quick view
+    limits:
+      storage: Unlimited
+      transactionFee: "3%"
+      ecommerce: true
+      customDomain: true
+
+  - name: Performance
+    description: >-
+      Advanced e-commerce plan with no transaction fees, abandoned cart
+      recovery, product reviews, PayPal integration, priority support, and
+      advanced eCommerce analytics. Best for high-volume stores.
+    price: 36
+    currency: USD
+    billing: monthly
+    annualPrice: 32
+    features:
+      - Everything in Professional
+      - No transaction fees
+      - Abandoned cart recovery
+      - Product reviews
+      - PayPal integration
+      - Advanced eCommerce analytics
+      - Priority support
+      - Password-protected pages
+      - Real-time shipping
+    limits:
+      storage: Unlimited
+      transactionFee: "0%"
+      ecommerce: true
+      customDomain: true
