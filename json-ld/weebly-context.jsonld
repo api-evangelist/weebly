@@ -1,0 +1,250 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "wb": "https://api-evangelist.github.io/weebly/vocab#",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+
+    "site_id": {
+      "@id": "wb:siteId",
+      "@type": "xsd:string"
+    },
+    "user_id": {
+      "@id": "wb:userId",
+      "@type": "xsd:string"
+    },
+    "page_id": {
+      "@id": "wb:pageId",
+      "@type": "xsd:string"
+    },
+    "blog_id": {
+      "@id": "wb:blogId",
+      "@type": "xsd:string"
+    },
+    "post_id": {
+      "@id": "wb:postId",
+      "@type": "xsd:string"
+    },
+    "product_id": {
+      "@id": "wb:productId",
+      "@type": "xsd:string"
+    },
+    "order_id": {
+      "@id": "wb:orderId",
+      "@type": "xsd:string"
+    },
+    "category_id": {
+      "@id": "wb:categoryId",
+      "@type": "xsd:string"
+    },
+    "coupon_id": {
+      "@id": "wb:couponId",
+      "@type": "xsd:string"
+    },
+    "member_id": {
+      "@id": "wb:memberId",
+      "@type": "xsd:string"
+    },
+
+    "title": {
+      "@id": "schema:name",
+      "@type": "xsd:string"
+    },
+    "description": {
+      "@id": "schema:description",
+      "@type": "xsd:string"
+    },
+    "url": {
+      "@id": "schema:url",
+      "@type": "@id"
+    },
+    "domain": {
+      "@id": "schema:url",
+      "@type": "xsd:string"
+    },
+    "published": {
+      "@id": "schema:datePublished",
+      "@type": "xsd:boolean"
+    },
+    "created_date": {
+      "@id": "schema:dateCreated",
+      "@type": "xsd:dateTime"
+    },
+    "updated_date": {
+      "@id": "schema:dateModified",
+      "@type": "xsd:dateTime"
+    },
+
+    "price": {
+      "@id": "schema:price",
+      "@type": "xsd:decimal"
+    },
+    "currency": {
+      "@id": "schema:priceCurrency",
+      "@type": "xsd:string"
+    },
+    "sku": {
+      "@id": "schema:sku",
+      "@type": "xsd:string"
+    },
+    "inventory": {
+      "@id": "wb:inventoryCount",
+      "@type": "xsd:integer"
+    },
+    "weight": {
+      "@id": "schema:weight",
+      "@type": "xsd:decimal"
+    },
+    "shipping_weight": {
+      "@id": "wb:shippingWeight",
+      "@type": "xsd:decimal"
+    },
+
+    "status": {
+      "@id": "schema:orderStatus",
+      "@type": "xsd:string"
+    },
+    "total": {
+      "@id": "schema:totalPrice",
+      "@type": "xsd:decimal"
+    },
+    "subtotal": {
+      "@id": "wb:subtotal",
+      "@type": "xsd:decimal"
+    },
+    "tax": {
+      "@id": "wb:taxAmount",
+      "@type": "xsd:decimal"
+    },
+    "shipping": {
+      "@id": "wb:shippingAmount",
+      "@type": "xsd:decimal"
+    },
+    "discount": {
+      "@id": "wb:discountAmount",
+      "@type": "xsd:decimal"
+    },
+
+    "email": {
+      "@id": "schema:email",
+      "@type": "xsd:string"
+    },
+    "name": {
+      "@id": "schema:name",
+      "@type": "xsd:string"
+    },
+    "phone": {
+      "@id": "schema:telephone",
+      "@type": "xsd:string"
+    },
+    "address": {
+      "@id": "schema:address",
+      "@type": "@id"
+    },
+
+    "access_token": {
+      "@id": "wb:accessToken",
+      "@type": "xsd:string"
+    },
+    "scope": {
+      "@id": "wb:oauthScope",
+      "@type": "xsd:string"
+    },
+
+    "Site": {
+      "@id": "wb:Site",
+      "@context": {
+        "site_id": "wb:siteId",
+        "title": "schema:name",
+        "domain": "schema:url",
+        "user_id": "wb:userId",
+        "published": "schema:datePublished",
+        "created_date": "schema:dateCreated",
+        "updated_date": "schema:dateModified"
+      }
+    },
+    "Page": {
+      "@id": "wb:Page",
+      "@context": {
+        "page_id": "wb:pageId",
+        "site_id": "wb:siteId",
+        "title": "schema:name",
+        "url": "schema:url",
+        "published": "schema:datePublished",
+        "layout": "wb:pageLayout"
+      }
+    },
+    "BlogPost": {
+      "@id": "wb:BlogPost",
+      "@context": {
+        "post_id": "wb:postId",
+        "blog_id": "wb:blogId",
+        "site_id": "wb:siteId",
+        "title": "schema:headline",
+        "url": "schema:url",
+        "body": "schema:articleBody",
+        "author": "schema:author",
+        "created_date": "schema:dateCreated",
+        "updated_date": "schema:dateModified"
+      }
+    },
+    "Product": {
+      "@id": "schema:Product",
+      "@context": {
+        "product_id": "wb:productId",
+        "site_id": "wb:siteId",
+        "name": "schema:name",
+        "description": "schema:description",
+        "price": "schema:price",
+        "currency": "schema:priceCurrency",
+        "sku": "schema:sku",
+        "inventory": "wb:inventoryCount",
+        "weight": "schema:weight"
+      }
+    },
+    "Order": {
+      "@id": "schema:Order",
+      "@context": {
+        "order_id": "wb:orderId",
+        "site_id": "wb:siteId",
+        "status": "schema:orderStatus",
+        "total": "schema:totalPrice",
+        "currency": "schema:priceCurrency",
+        "email": "schema:email",
+        "created_date": "schema:dateCreated",
+        "updated_date": "schema:dateModified"
+      }
+    },
+    "Member": {
+      "@id": "schema:Person",
+      "@context": {
+        "member_id": "wb:memberId",
+        "site_id": "wb:siteId",
+        "email": "schema:email",
+        "name": "schema:name",
+        "created_date": "schema:dateCreated"
+      }
+    },
+    "Coupon": {
+      "@id": "wb:Coupon",
+      "@context": {
+        "coupon_id": "wb:couponId",
+        "site_id": "wb:siteId",
+        "code": "wb:couponCode",
+        "discount": "wb:discountAmount",
+        "discount_type": "wb:discountType",
+        "start_date": "schema:validFrom",
+        "end_date": "schema:validThrough"
+      }
+    },
+    "FormSubmission": {
+      "@id": "wb:FormSubmission",
+      "@context": {
+        "site_id": "wb:siteId",
+        "page_id": "wb:pageId",
+        "fields": "schema:additionalProperty",
+        "created_date": "schema:dateCreated"
+      }
+    }
+  }
+}

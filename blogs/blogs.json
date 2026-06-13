@@ -1,0 +1,14 @@
+{
+  "repo": "weebly",
+  "feeds": [
+    {
+      "source": "https://www.weebly.com/blog",
+      "feed_url": "https://www.weebly.com/blog/feed",
+      "title": "Weebly Blog",
+      "saved": 0,
+      "method": "feed"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-06-13T00:00:00Z"
+}
