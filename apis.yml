@@ -52,6 +52,8 @@ apis:
         url: https://www.weebly.com/developer/
         email: ""
 common:
+  - type: DomainSecurity
+    url: security/weebly-domain-security.yml
   - type: Website
     url: https://www.weebly.com
   - type: Documentation
