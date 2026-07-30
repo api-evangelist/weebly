@@ -6,7 +6,19 @@ description: >-
   custom form submissions. The platform serves over 50 million websites and
   offers OAuth 2.0-authenticated REST endpoints for building apps and
   integrations on top of Weebly-powered storefronts and sites.
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Freemium
+  confidence: medium
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/weebly.png
 url: >-
   https://raw.githubusercontent.com/api-evangelist/weebly/refs/heads/main/apis.yml
 created: "2026-06-13"
