@@ -31,6 +31,16 @@ tags:
   - Blogging
   - Sites
   - Pages
+  - Product
+  - Order
+  - Customers
+  - Square
+tags_raw:
+  - Website Builder
+  - E-Commerce
+  - Blogging
+  - Sites
+  - Pages
   - Products
   - Orders
   - Customers
@@ -47,6 +57,14 @@ apis:
     humanURL: https://dev.weebly.com/
     baseURL: https://api.weeblycloud.com
     tags:
+      - Sites
+      - Pages
+      - Blog
+      - E-Commerce
+      - Order
+      - Product
+      - Customers
+    tags_raw:
       - Sites
       - Pages
       - Blog
