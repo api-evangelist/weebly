@@ -6,6 +6,17 @@ description: >-
   custom form submissions. The platform serves over 50 million websites and
   offers OAuth 2.0-authenticated REST endpoints for building apps and
   integrations on top of Weebly-powered storefronts and sites.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: unknown
