@@ -64,40 +64,111 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Weebly (a Square company) is a website and e-commerce builder providing REST APIs for managing sites, pages, products, orders, customers, blog posts, and custom form submissions. The platform serves over 50 million websites worldwide.
+Weebly (a Square company) is a website and e-commerce builder providing REST APIs for managing sites, pages, products, orders, customers, blog posts, and custom form submissions. The platform serves over 50 million websites and offers OAuth 2.0-authenticated REST endpoints for building apps and integrations on top of Weebly-powered storefronts and sites.
 
-## Developer Resources
+**Areas:** Website Builder · E-Commerce · Blogging · Sites · Pages · Product · Order · Customers · Square
 
-- **Developer Center**: https://www.weebly.com/developer/
-- **API Documentation**: https://dev.weebly.com/
-- **GitHub Organization**: https://github.com/weebly
-- **Pricing**: https://www.weebly.com/pricing
-- **Status Page**: https://weebly.statuspage.io
-- **Blog**: https://www.weebly.com/blog
+## Weebly on APIs.io
 
-## API Overview
+Everything profiled for Weebly is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/weebly/](https://apis.io/providers/weebly/)** — or go straight to one of the APIs or properties below.
 
-The Weebly REST API uses OAuth 2.0 authentication and JSON data exchange. The base URL for Cloud API calls is `https://api.weeblycloud.com`. Key API resource groups include:
+### APIs (1)
 
-- **Sites** - Create and manage Weebly sites
-- **Pages** - Manage individual pages within a site
-- **Blog** - Manage blog posts and comments
-- **Products** - Create and manage store product catalogs
-- **Orders** - Access order details, billing transactions, and shipments
-- **Customers** - Manage customer profiles
-- **Coupons** - Create and manage discount codes
-- **Categories** - Organize store products
-- **Forms** - Access form submissions
+- [Weebly REST API](https://apis.io/apis/weebly/weebly-api/) — RESTful API for managing Weebly sites, pages, blog posts, e-commerce products, orders, customers, coupons, categories, and form submissions. Supports OAuth…
 
-**Rate Limit**: 5,000 API calls per hour per access token.
+### Published properties
 
-## Note on Developer Program
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-Since February 2020, Weebly has paused new developer account registrations and app submissions following its acquisition by Square. Existing developer integrations continue to be supported.
+#### JSON-LD (1)
 
-## Profiles
+Linked-data contexts for the provider's vocabulary.
 
-- [apis.yml](apis.yml) - APIs.json 0.19 provider profile
-- [plans/weebly-plans-pricing.yml](plans/weebly-plans-pricing.yml) - Subscription plan details
-- [rate-limits/weebly-rate-limits.yml](rate-limits/weebly-rate-limits.yml) - API rate limit specifications
-- [finops/weebly-finops.yml](finops/weebly-finops.yml) - Financial operations guidance
+- [Weebly Context](https://apis.io/jsonld/weebly/weebly-context/)
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Weebly Domain Security](https://apis.io/security/weebly/weebly-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Weebly Plans Pricing](https://apis.io/plans/weebly/weebly-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Weebly Rate Limits](https://apis.io/rate-limits/weebly/weebly-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Weebly Finops](https://apis.io/finops/weebly/weebly-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.weebly.com)
+- [Documentation](https://dev.weebly.com/)
+- [Pricing](https://www.weebly.com/pricing)
+- [Blog](https://www.weebly.com/blog)
+- [Status](https://weebly.statuspage.io)
+
+## API Evangelist rating
+
+**Kin Score 22.2** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 34.7 |
+| Contract governance | 0.0 |
+| Operational transparency | 26.3 |
+| Developer ergonomics | 2.4 |
+| Access clarity | 18.4 |
+
+**Agent readiness 13.6** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 10.8** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/weebly/](https://apis.io/providers/weebly/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Weebly: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/weebly/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
